@@ -12,9 +12,10 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   color: #333;
+  line-height: 1.8;
 }
 
-/* ==== HERO dengan background foto transparan ==== */
+/* HERO */
 .hero {
   position: relative;
   background: url('https://upload.wikimedia.org/wikipedia/commons/1/15/White_Broiler_Chickens.jpg') center/cover no-repeat;
@@ -29,7 +30,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 74, 173, 0.75); /* transparansi */
+  background: rgba(0, 74, 173, 0.75);
 }
 
 .hero-content {
@@ -40,7 +41,6 @@ body {
 
 .hero h1 {
   font-size: 2.8em;
-  margin-bottom: 10px;
 }
 
 .hero p {
@@ -58,7 +58,7 @@ body {
   text-decoration: none;
 }
 
-/* ==== SECTION ==== */
+/* SECTION */
 section {
   padding: 60px 12%;
 }
@@ -69,15 +69,32 @@ h2 {
   margin-bottom: 30px;
 }
 
-/* ==== ABOUT ==== */
+/* ABOUT */
 .about {
   background: #fff8e1;
-  padding: 25px;
+  padding: 30px;
   border-radius: 12px;
   border-left: 6px solid #ffcc00;
 }
 
-/* ==== GALERI ==== */
+/* FOUNDERS */
+.founders {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.founder-card {
+  background: white;
+  border: 2px solid #ffcc00;
+  padding: 20px;
+  width: 260px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* GALLERY */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -91,7 +108,7 @@ h2 {
   border-radius: 12px;
 }
 
-/* ==== CTA ==== */
+/* CTA */
 .cta {
   background: linear-gradient(90deg, #004aad, #ffcc00);
   color: white;
@@ -108,7 +125,7 @@ h2 {
   text-decoration: none;
 }
 
-/* ==== KONTAK ==== */
+/* CONTACT */
 .contact {
   background: #004aad;
   color: white;
@@ -121,7 +138,7 @@ h2 {
   padding: 20px;
   border-radius: 12px;
   margin: 15px auto;
-  max-width: 350px;
+  max-width: 360px;
 }
 
 .btn {
@@ -135,7 +152,7 @@ h2 {
   font-weight: bold;
 }
 
-/* ==== MAP ==== */
+/* MAP */
 .map iframe {
   width: 100%;
   height: 350px;
@@ -143,7 +160,7 @@ h2 {
   border: none;
 }
 
-/* ==== FOOTER ==== */
+/* FOOTER */
 footer {
   background: #002e73;
   color: white;
@@ -151,7 +168,7 @@ footer {
   padding: 25px;
 }
 
-/* ==== MOBILE ==== */
+/* MOBILE */
 @media (max-width: 768px) {
   .hero h1 { font-size: 2em; }
   section { padding: 40px 8%; }
@@ -165,24 +182,57 @@ footer {
 <div class="hero">
   <div class="hero-content">
     <h1>Mitra Ayam Nusantara</h1>
-    <p>Supplier Ayam & Bebek Segar untuk Usaha Kuliner Anda</p>
+    <p>Solusi Cerdas Pasokan Ayam & Bebek untuk Usaha Kuliner Anda</p>
     <a href="#kontak"><i class="fa-brands fa-whatsapp"></i> Pesan Sekarang</a>
   </div>
 </div>
 
 <!-- ABOUT -->
-<section>
-<h2>Tentang Kami</h2>
+<section id="tentang">
+<h2>Tentang Usaha Kami</h2>
 <div class="about">
 <p>
-Mitra Ayam Nusantara adalah supplier unggas terpercaya yang melayani ayam dan bebek segar
-untuk rumah tangga, warung, restoran, katering, hingga pedagang besar.
-Kami bekerja sama langsung dengan peternak dan unit pemotongan ayam (Jual Ayam Mbak Sri – Welery).
+Tidak semua pembeli memiliki akses langsung ke peternak. Peternak umumnya melayani pembelian
+dalam jumlah besar, sementara warung, rumah makan, katering, hingga pedagang pasar
+sering membutuhkan pasokan ayam segar dalam jumlah fleksibel namun tetap berkualitas.
+</p>
+
+<p>
+<strong>Nur Hamzah Supplier Ayam</strong> hadir sebagai solusi dengan pengalaman turun-temurun
+dalam distribusi unggas. Kami menjadi penghubung antara peternak terpercaya dan pembeli,
+sehingga pelanggan mendapatkan ayam dan bebek segar tanpa harus membeli langsung ke peternak.
+</p>
+
+<p>
+Kami hanya menyalurkan unggas dengan bobot ideal, kondisi sehat, dan kualitas terjaga.
+Untuk kebutuhan ayam potong, kami bekerja sama dengan unit pemrosesan
+<strong>Jual Ayam Mbak Sri – Welery</strong>, sehingga pelanggan dapat memesan ayam hidup maupun
+ayam yang sudah dipotong dan diproses secara higienis.
+</p>
+
+<p>
+Dengan sistem ini, pembeli mendapatkan harga kompetitif, pasokan stabil, serta kemudahan
+pemesanan baik eceran maupun partai besar.
 </p>
 </div>
 </section>
 
-<!-- GALERI -->
+<!-- FOUNDERS -->
+<section id="pendiri">
+<h2>Pendiri Usaha</h2>
+<div class="founders">
+  <div class="founder-card">
+    <h3>Generasi 1</h3>
+    <p><strong>Bpk. H. Sualman</strong></p>
+  </div>
+  <div class="founder-card">
+    <h3>Generasi 2</h3>
+    <p><strong>Bpk. Nur Hamzah</strong></p>
+  </div>
+</div>
+</section>
+
+<!-- GALLERY -->
 <section>
 <h2>Galeri Produk & Proses</h2>
 <div class="gallery">
@@ -195,12 +245,12 @@ Kami bekerja sama langsung dengan peternak dan unit pemotongan ayam (Jual Ayam M
 
 <!-- CTA -->
 <div class="cta">
-<h2>Siap Jadi Mitra Usaha Anda</h2>
+<h2>Siap Menjadi Mitra Usaha Anda</h2>
 <p>Pesanan eceran & partai besar • Potong sesuai permintaan • Pasokan stabil</p>
 <a href="#kontak">Hubungi Kami Sekarang</a>
 </div>
 
-<!-- KONTAK -->
+<!-- CONTACT -->
 <section class="contact" id="kontak">
 <h2>Kontak & Lokasi</h2>
 
@@ -217,9 +267,7 @@ Kami bekerja sama langsung dengan peternak dan unit pemotongan ayam (Jual Ayam M
 </div>
 
 <div class="contact-card map">
-<iframe 
-src="https://www.google.com/maps?q=RT.4/RW.2,+Magangan,+Kebonsari,+Rowosari,+Kendal&output=embed">
-</iframe>
+<iframe src="https://www.google.com/maps?q=RT.4/RW.2,+Magangan,+Kebonsari,+Rowosari,+Kendal&output=embed"></iframe>
 </div>
 </section>
 
