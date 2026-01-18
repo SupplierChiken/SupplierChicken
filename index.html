@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mitra Ayam Nusantara</title>
+
+  <!-- ICON -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
   <style>
     body {
       margin: 0;
@@ -47,7 +51,6 @@
       border-left: 6px solid #ffcc00;
       padding: 25px;
       border-radius: 12px;
-      margin-bottom: 30px;
     }
 
     .founders {
@@ -68,11 +71,6 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
-    .founder-card h3 {
-      color: #004aad;
-      margin-bottom: 10px;
-    }
-
     .contact {
       background: #004aad;
       color: white;
@@ -90,8 +88,13 @@
       border-radius: 12px;
       padding: 20px;
       margin: 15px auto;
-      width: 300px;
+      width: 320px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .contact-card h3 i {
+      color: #004aad;
+      margin-right: 6px;
     }
 
     .btn {
@@ -103,6 +106,10 @@
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #ffe066;
     }
 
     footer {
@@ -141,6 +148,7 @@
     }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -151,59 +159,38 @@
 <section id="tentang">
   <h2>Tentang Usaha Kami</h2>
   <div class="about">
-    <p>Mitra Ayam Nusantara merupakan supplier unggas yang berperan sebagai penghubung antara peternak dan pelaku usaha kuliner.
-    Kami menyediakan ayam dan bebek segar dengan pasokan stabil untuk pedagang, warung makan, rumah makan, dan katering.</p>
+    <p>
+      Mitra Ayam Nusantara adalah supplier unggas yang menjembatani peternak dan pembeli.
+      Kami menyediakan ayam dan bebek segar berkualitas untuk rumah tangga, warung, restoran,
+      katering, hingga usaha kuliner skala besar.
+    </p>
+    <p>
+      Pasokan berasal dari peternak terpercaya dengan proses seleksi ketat,
+      memastikan unggas sehat, segar, dan layak konsumsi.
+      Kami juga melayani pemotongan dan pemrosesan sesuai kebutuhan pelanggan.
+    </p>
   </div>
 </section>
 
-<section id="mitra-lokasi">
-  <h2>Mitra & Lokasi Pengambilan</h2>
-
-  <div class="about">
-    <h3 style="color:#004aad;">Nur Hamzah Supplier Ayam (Gudang Utama)</h3>
-    <p>
-      Merupakan <strong>alamat utama supplier ayam hidup</strong> dan pusat distribusi Mitra Ayam Nusantara.
-      Lokasi ini melayani pasokan ayam hidup dalam jumlah besar dan menjadi titik pengambilan utama bagi mitra dan pedagang.
-    </p>
-
-    <p><strong>Klik alamat selengkapnya:</strong></p>
-    <a href="https://share.google/aY7uLkTQukCLHmIZa" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Google_Maps_Logo_2020.svg" width="40">
-      <strong>Nur Hamzah Supplier Ayam</strong>
-    </a>
-
-    <p>
-      RT.4/RW.2, Magangan, Kebonsari,<br>
-      Kec. Rowosari, Kabupaten Kendal,<br>
-      Jawa Tengah 51354
-    </p>
-  </div>
-
-  <div class="about">
-    <h3 style="color:#004aad;">Jual Ayam Mbak Sri – Welery</h3>
-    <p>
-      Merupakan <strong>mitra pemotongan dan penjualan ayam potong (karkas)</strong>.
-      Ayam diproses secara bersih dan rapi, siap untuk kebutuhan pasar, warung makan, dan rumah makan.
-    </p>
-
-    <p><strong>Klik alamat selengkapnya:</strong></p>
-    <a href="https://share.google/mCDbtGW2QR6vk5fX3" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Google_Maps_Logo_2020.svg" width="40">
-      <strong>Jual Ayam Mbak Sri – Welery</strong>
-    </a>
-
-    <p>
-      Pasar Welery,<br>
-      Kabupaten Kendal, Jawa Tengah
-    </p>
+<section id="pendiri">
+  <h2>Pendiri</h2>
+  <div class="founders">
+    <div class="founder-card">
+      <h3>Generasi 1</h3>
+      <p><strong>Bpk. H. Sualman</strong></p>
+    </div>
+    <div class="founder-card">
+      <h3>Generasi 2</h3>
+      <p><strong>Bpk. Nur Hamzah</strong></p>
+    </div>
   </div>
 </section>
 
 <section id="jadwal">
   <h2>Jam Operasional</h2>
   <div class="schedule">
-    <p><strong>Pengiriman:</strong> 07.00 – 14.00</p>
-    <p><strong>Pemesanan:</strong> 07.00 – 23.00</p>
+    <p><strong>Jam Pengiriman:</strong> 07.00 – 14.00 (Setiap Hari)</p>
+    <p><strong>Jam Pemesanan:</strong> 07.00 – 23.00 (Setiap Hari)</p>
   </div>
 </section>
 
@@ -211,22 +198,51 @@
   <h2>Hubungi Kami</h2>
 
   <div class="contact-card">
-    <p><strong>Nur Hamzah</strong></p>
-    <a href="https://wa.me/6281325580005" class="btn">Pesan via WhatsApp</a>
+    <h3><i class="fa-brands fa-whatsapp"></i> Nur Hamzah</h3>
+    <p><strong>WhatsApp:</strong> 0813-2558-0005</p>
+    <a class="btn" target="_blank"
+       href="https://wa.me/6281325580005?text=Halo%20saya%20ingin%20memesan%20ayam%20atau%20bebek%20dari%20Mitra%20Ayam%20Nusantara">
+       <i class="fa-brands fa-whatsapp"></i> Pesan via WhatsApp
+    </a>
   </div>
 
   <div class="contact-card">
-    <p><strong>Tuyati</strong></p>
-    <a href="https://wa.me/6282115984794" class="btn">Pesan via WhatsApp</a>
+    <h3><i class="fa-brands fa-whatsapp"></i> Tuyati</h3>
+    <p><strong>WhatsApp:</strong> 0821-1598-4794</p>
+    <a class="btn" target="_blank"
+       href="https://wa.me/6282115984794?text=Halo%20saya%20ingin%20memesan%20ayam%20atau%20bebek%20dari%20Mitra%20Ayam%20Nusantara">
+       <i class="fa-brands fa-whatsapp"></i> Pesan via WhatsApp
+    </a>
+  </div>
+
+  <div class="contact-card">
+    <h3><i class="fa-solid fa-envelope"></i> Email</h3>
+    <p><strong>Email:</strong> adjim777@gmail.com</p>
+    <a class="btn" href="mailto:adjim777@gmail.com">
+      <i class="fa-solid fa-paper-plane"></i> Kirim Email
+    </a>
+  </div>
+
+  <div class="contact-card">
+    <h3><i class="fa-solid fa-location-dot"></i> Lokasi Gudang</h3>
+    <p>
+      RT.4/RW.2, Magangan, Kebonsari,<br>
+      Kec. Rowosari, Kabupaten Kendal,<br>
+      Jawa Tengah 51354
+    </p>
+    <a class="btn" target="_blank"
+       href="https://maps.google.com/?q=RT.4/RW.2,+Magangan,+Kebonsari,+Rowosari,+Kendal">
+      <i class="fa-solid fa-map-location-dot"></i> Buka Google Maps
+    </a>
   </div>
 </section>
 
 <footer>
   <div class="footer-img">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/White_Broiler_Chickens.jpg">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Indian_runner_ducks.jpg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/White_Broiler_Chickens.jpg" alt="Ayam Broiler">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Indian_runner_ducks.jpg" alt="Bebek">
   </div>
-  <p>&copy; 2025 Mitra Ayam Nusantara</p>
+  <p>&copy; 2025 Mitra Ayam Nusantara | Semua Hak Dilindungi</p>
 </footer>
 
 </body>
