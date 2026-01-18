@@ -3,19 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mitra Ayam Nusantara</title>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<title>Supplier Ayam Potong</title>
 
 <style>
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  color: #333;
-  line-height: 1.8;
+  font-family: Arial, sans-serif;
 }
 
-/* HERO */
 .hero {
   position: relative;
   background: url('images/ayam-broiler.jpg') center/cover no-repeat;
@@ -24,6 +19,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: white;
 }
 
 .hero::before {
@@ -35,245 +31,60 @@ body {
 
 .hero-content {
   position: relative;
-  color: white;
-  padding: 20px;
+  z-index: 1;
 }
 
-.hero h1 {
-  font-size: 2.8em;
-}
-
-.hero p {
-  font-size: 1.3em;
-}
-
-.hero a {
-  display: inline-block;
-  margin-top: 20px;
-  background: #ffcc00;
-  color: #004aad;
-  padding: 12px 25px;
-  border-radius: 10px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-/* SECTION */
 section {
-  padding: 60px 12%;
-}
-
-h2 {
-  color: #004aad;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-/* ABOUT */
-.about {
-  background: #fff8e1;
-  padding: 30px;
-  border-radius: 12px;
-  border-left: 6px solid #ffcc00;
-}
-
-/* FOUNDERS */
-.founders {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.founder-card {
-  background: white;
-  border: 2px solid #ffcc00;
-  padding: 20px;
-  width: 260px;
-  border-radius: 12px;
+  padding: 60px 20px;
   text-align: center;
 }
 
-/* GALLERY */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
 }
 
 .gallery img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 12px;
-}
-
-/* CTA */
-.cta {
-  background: linear-gradient(90deg, #004aad, #ffcc00);
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.cta a {
-  background: white;
-  color: #004aad;
-  padding: 12px 25px;
   border-radius: 10px;
-  font-weight: bold;
-  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* CONTACT */
-.contact {
-  background: #004aad;
-  color: white;
-  text-align: center;
-}
-
-.contact-card {
-  background: white;
-  color: #333;
-  padding: 20px;
-  border-radius: 12px;
-  margin: 15px auto;
-  max-width: 360px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-  background: #ffcc00;
-  color: #004aad;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* MAP */
-.map iframe {
-  width: 100%;
-  height: 350px;
-  border-radius: 12px;
-  border: none;
-}
-
-/* FOOTER */
-footer {
-  background: #002e73;
-  color: white;
-  text-align: center;
-  padding: 25px;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .hero h1 { font-size: 2em; }
-  section { padding: 40px 8%; }
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
 <div class="hero">
   <div class="hero-content">
-    <h1>Mitra Ayam Nusantara</h1>
-    <p>Solusi Cerdas Pasokan Ayam & Bebek untuk Usaha Kuliner Anda</p>
-    <a href="#kontak"><i class="fa-brands fa-whatsapp"></i> Pesan Sekarang</a>
+    <h1>Supplier Ayam Potong</h1>
+    <p>Melayani Pasokan Ayam Potong Berkualitas</p>
   </div>
 </div>
 
-<!-- ABOUT -->
-<section id="tentang">
-<h2>Tentang Usaha Kami</h2>
-<div class="about">
-<p>
-Tidak semua pembeli memiliki akses langsung ke peternak. Peternak umumnya melayani pembelian
-dalam jumlah besar, sementara warung, rumah makan, katering, hingga pedagang pasar
-sering membutuhkan pasokan ayam segar dalam jumlah fleksibel namun tetap berkualitas.
-</p>
-
-<p>
-<strong>Nur Hamzah Supplier Ayam</strong> hadir sebagai solusi dengan pengalaman turun-temurun
-dalam distribusi unggas. Kami menjadi penghubung antara peternak terpercaya dan pembeli,
-sehingga pelanggan mendapatkan ayam dan bebek segar tanpa harus membeli langsung ke peternak.
-</p>
-
-<p>
-Kami hanya menyalurkan unggas dengan bobot ideal, kondisi sehat, dan kualitas terjaga.
-Untuk kebutuhan ayam potong, kami bekerja sama dengan unit pemrosesan
-<strong>Jual Ayam Mbak Sri – Welery</strong>, sehingga pelanggan dapat memesan ayam hidup maupun
-ayam yang sudah dipotong dan diproses secara higienis.
-</p>
-
-<p>
-Dengan sistem ini, pembeli mendapatkan harga kompetitif, pasokan stabil, serta kemudahan
-pemesanan baik eceran maupun partai besar.
-</p>
-</div>
-</section>
-
-<!-- FOUNDERS -->
-<section id="pendiri">
-<h2>Pendiri Usaha</h2>
-<div class="founders">
-  <div class="founder-card">
-    <h3>Generasi 1</h3>
-    <p><strong>Bpk. H. Sualman</strong></p>
-  </div>
-  <div class="founder-card">
-    <h3>Generasi 2</h3>
-    <p><strong>Bpk. Nur Hamzah</strong></p>
-  </div>
-</div>
-</section>
-
-<!-- GALLERY -->
 <section>
-<h2>Galeri Produk & Proses</h2>
-<div class="gallery">
-  <img src="images/ayam-broiler.jpg" alt="Ayam Broiler">
-  <img src="images/ayam-potong.jpg" alt="Ayam Potong">
-  <img src="images/proses-potong.jpg" alt="Proses Pemotongan Ayam">
-  <img src="images/gudang-nur-hamzah.jpg" alt="Gudang Supplier Ayam">
-</div>
+  <h2>Galeri Produk & Proses</h2>
+  <div class="gallery">
+    <img src="images/ayam-broiler.jpg" alt="Ayam Broiler">
+    <img src="images/ayam-potong.jpg" alt="Ayam Potong">
+    <img src="images/proses-potong.jpg" alt="Proses Pemotongan Ayam">
+    <img src="images/gudang-nur-hamzah.jpg" alt="Gudang Supplier Ayam">
+  </div>
 </section>
 
-<!-- CTA -->
-<div class="cta">
-<h2>Siap Menjadi Mitra Usaha Anda</h2>
-<p>Pesanan eceran & partai besar • Potong sesuai permintaan • Pasokan stabil</p>
-<a href="#kontak">Hubungi Kami Sekarang</a>
-</div>
-
-<!-- CONTACT -->
-<section class="contact" id="kontak">
-<h2>Kontak & Lokasi</h2>
-
-<div class="contact-card">
-<p><strong>Nur Hamzah</strong></p>
-<p>📞 0813-2558-0005</p>
-<a class="btn" href="https://wa.me/6281325580005" target="_blank">WhatsApp</a>
-</div>
-
-<div class="contact-card">
-<p><strong>Tuyati</strong></p>
-<p>📞 0821-1598-4794</p>
-<a class="btn" href="https://wa.me/6282115984794" target="_blank">WhatsApp</a>
-</div>
-
-<div class="contact-card map">
-<iframe src="https://www.google.com/maps?q=RT.4/RW.2,+Magangan,+Kebonsari,+Rowosari,+Kendal&output=embed"></iframe>
-</div>
+<section style="background: linear-gradient(to right, #0b5ed7, #f4c430); color: white;">
+  <h2>Siap Menjadi Mitra Usaha Anda</h2>
+  <p>Pesanan eceran & partai besar • Potong sesuai permintaan • Pasokan stabil</p>
 </section>
-
-<footer>
-<p>&copy; 2025 Mitra Ayam Nusantara | Supplier Ayam & Bebek</p>
-</footer>
 
 </body>
 </html>
+
